@@ -1,0 +1,11 @@
+<meta presto name="Counter">
+
+<div x-data="counter()" class="m-4 p-2 border-2 border-gray-200 bg-gray-100">
+  <div class="flex items-center w-40 h-8 my-2 p-1 rounded-full border border-gray-400 bg-gray-200">
+    <button x-on:click="countDown" class="focus:outline-none rounded-full h-6 w-6 bg-red-600 text-white cursor-pointer text-center text-md font-bold">-</button>
+    <div x-text="$store.counter.count" class="w-auto flex-1 text-center text-xl"></div>
+    <button x-on:click="countUp" class="focus:outline-none rounded-full h-6 w-6 bg-green-600 text-white cursor-pointer text-center text-md font-bold">+</button>
+  </div>  
+  <div x-text="title" class="w-40 text-sm text-gray-400 text-center"></div>
+  <Label ::color="blue" ::title="Label component nested inside Counter" />
+</div>

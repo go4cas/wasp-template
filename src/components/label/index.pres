@@ -1,0 +1,12 @@
+<meta
+  presto
+  name="Label"
+  ::color="blue"
+  ::title="hello!"
+>
+
+<div class="bg-{{color}}-600 h-10 w-40 rounded-md flex items-center justify-center">
+  <div class="flex items-center">
+    <span class="text-center text-xs text-{{color}}-200 font-normal">{{title}}</span>
+  </div>
+</div>

@@ -2,7 +2,7 @@ export default {
   input: 'src/index.pres',
   
   include: [
-    'src/components/**/*.html'
+    'src/components/**/*.pres'
   ],
   
   output: {

@@ -1,5 +1,5 @@
 {
-  "name": "@{{package-slug}}",
+  "name": "wasp-template",
   "version": "0.1.0",
   "description": "{{package-description}}",
   "repository": {
