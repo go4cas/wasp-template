@@ -11,6 +11,9 @@
     <div class="m-4 p-2 border-2 border-gray-200 bg-gray-100">
       <Label ::color="green" ::title="Static label component" />
     </div>
+    <div class="m-4 p-2 border-2 border-gray-200 bg-gray-100">
+      <button x-data x-on:click="$logger('CLICKED!')" class="focus:outline-none rounded-md p-1 bg-yellow-300 text-yellow-600 text-sm cursor-pointer text-center border-2 border-yellow-500">Alpine Magic Helper - click me, and check the console</button>
+    </div>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

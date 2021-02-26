@@ -9,18 +9,21 @@
     <button x-on:click="countUp" class="focus:outline-none rounded-full h-6 w-6 bg-green-600 text-white cursor-pointer text-center text-md font-bold">+</button>
   </div>  
   <div x-text="title" class="w-40 text-sm text-gray-400 text-center"></div>
-  <div class="bg-blue-600 h-10 w-40 rounded-md flex items-center justify-center">
+  <div class="bg-blue-600 h-10 w-40 rounded-sm flex items-center justify-center">
   <div class="flex items-center">
     <span class="text-center text-xs text-blue-200 font-normal">Label component nested inside Counter</span>
   </div>
 </div></div>
 
     <div class="m-4 p-2 border-2 border-gray-200 bg-gray-100">
-      <div class="bg-green-600 h-10 w-40 rounded-md flex items-center justify-center">
+      <div class="bg-green-600 h-10 w-40 rounded-sm flex items-center justify-center">
   <div class="flex items-center">
     <span class="text-center text-xs text-green-200 font-normal">Static label component</span>
   </div>
 </div>
+    </div>
+    <div class="m-4 p-2 border-2 border-gray-200 bg-gray-100">
+      <button x-data="" x-on:click="$logger('CLICKED!')" class="focus:outline-none rounded-md p-1 bg-yellow-300 text-yellow-600 text-sm cursor-pointer text-center border-2 border-yellow-500">Alpine Magic Helper - click me, and check the console</button>
     </div>
     <script type="module" src="./index.js"></script>
   

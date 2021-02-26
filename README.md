@@ -39,6 +39,7 @@ The main `src` folder contains a few important files:
 * `style.css` - add any aditional application specific styles to this files - that is if Windi/Tailwind is not enough
 * `index.js` - this is you application main logic file, and is used by Vite to run through your javascript dependancies, modules, etc
 * `utils.js` - general utilities to build component structre, import state into the app store, etc
+* `/plugins` - add your Alpine.js magic properties in here
 
 ### Configuration
 All config files reside in the project root. For now, the only imprtant mentions are:

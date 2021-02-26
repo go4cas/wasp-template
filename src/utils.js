@@ -18,3 +18,14 @@ export const registerStores = stores => {
     Spruce.store(Object.keys(stores[store])[0], stores[store][Object.keys(stores[store])[0]])
   }
 }
+
+export const registerMagicProps = plugins => {
+  Object.entries(plugins).forEach(entry => {
+    const [key, value] = entry
+    const alpine = window.deferLoadingAlpine || ((alpine) => alpine())
+    window.deferLoadingAlpine = function (callback) {
+      value.default.start()
+      alpine(callback)
+    }
+  })
+}
